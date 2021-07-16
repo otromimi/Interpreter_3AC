@@ -1,0 +1,11 @@
+# Simple example: read a string from a user and write it 3-times.
+MOV counter 0 #initialize variable with the empty string 
+READSTR Input
+# iteration until the condition is true
+LABEL @WHILE_
+JUMPIFEQ @End counter +3
+PRINT Input
+PRINT   "\n"
+ADD	counter	counter	1
+JUMP @WHILE_
+LABEL @End
